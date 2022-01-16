@@ -29,6 +29,5 @@ new Vue({
                 {this.currentIndex=this.images.length-1}
             
         }
-
     }
 })
