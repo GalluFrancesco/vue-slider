@@ -10,7 +10,6 @@ new Vue({
             'https://unsplash.it/300/300?image=151',
             'https://unsplash.it/300/300?image=160',
         ]
-        
     },
     methods:{
         nextIMG: function () {
