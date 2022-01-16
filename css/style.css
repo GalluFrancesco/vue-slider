@@ -41,6 +41,7 @@
     margin: 0px 5px;
     background-color: white;
     filter: brightness(0.5);
+    cursor: pointer;
 }
 
 [class|=button]{

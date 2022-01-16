@@ -17,7 +17,7 @@
             <div @click="nextIMG()" class="button-right"><b>></b></div>
             
             <div class="container-dot">
-                <div v-for="(nome, i) in images" :class="['dot', currentIndex===i ? 'shine' : '']" ></div>
+                <div v-for="(nome, i) in images" @click="thisDOT(i)" :class="['dot', currentIndex===i ? 'shine' : '']" ></div>
             </div>
         </div>
 

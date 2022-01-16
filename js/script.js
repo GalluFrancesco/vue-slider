@@ -28,6 +28,9 @@ new Vue({
             if(this.currentIndex < 0)
                 {this.currentIndex=this.images.length-1}
             
+        },
+        thisDOT: function(num){
+            this.currentIndex=num;
         }
     }
 })
