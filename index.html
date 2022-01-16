@@ -10,15 +10,17 @@
 </head>
 <body>
     <div id="app">
-        <div class='img-slider'>
-            <img :src="images[currentIndex]" alt="">
+        <div class="slider">
+            <img class="img-slider" :src="images[currentIndex]" alt="">
+
+            <div @click="prevIMG()" class="button-left"><b><</b></div>
+            <div @click="nextIMG()" class="button-right"><b>></b></div>
+            
+            <div class="container-dot">
+                <div v-for="(nome, i) in images" :class="['dot', currentIndex===i ? 'shine' : '']" ></div>
+            </div>
         </div>
-        <div @click="prevIMG()" class="button-style">previous</div>
-        <div @click="nextIMG()" class="button-style">next</div>
-        
-        <div class="container-dot">
-            <div v-for="(nome, i) in images" :class="['dot', currentIndex===i ? 'shine' : '']"></div>
-        </div>
+
     </div>
    <script src="js/script.js"></script> 
 </body>
